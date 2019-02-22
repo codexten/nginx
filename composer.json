@@ -1,0 +1,29 @@
+{
+  "name": "codexten/nginx",
+  "description": "php niginx manager",
+  "keywords": [
+    "php",
+    "nginx"
+  ],
+  "type": "library",
+  "require": {
+    "hiqdev/hidev-nginx": "dev-master",
+    "codexten/php-hosts": "2.0.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "codexten\\nginx\\": "src"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.0.x-dev"
+    },
+    "sconfig-plugin": {
+      "nginx": [
+        "$hosts",
+        "src/config/nginx.php"
+      ]
+    }
+  }
+}
