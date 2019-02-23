@@ -12,6 +12,7 @@ return [
     'components' => [
         'nginx' => [
             'class' => \codexten\nginx\components\Nginx::class,
+            'etcDir' => '/cpanel/docker/nginx/sites-available',
         ],
     ],
 ];
